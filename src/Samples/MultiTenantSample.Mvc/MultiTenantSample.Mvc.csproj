@@ -10,4 +10,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\EntityFrameworkCore\Eleven41.AspNetCore.MultiTenantIdentity.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\MultiTenantIdentity\Eleven41.AspNetCore.MultiTenantIdentity.csproj" />
+  </ItemGroup>
+
 </Project>

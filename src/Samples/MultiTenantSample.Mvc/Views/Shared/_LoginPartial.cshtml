@@ -1,7 +1,8 @@
 @using Microsoft.AspNetCore.Identity
+@using Eleven41.AspNetCore.MultiTenantIdentity;
 
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<MultiTenantUser> SignInManager
+@inject UserManager<MultiTenantUser> UserManager
 
 @if (SignInManager.IsSignedIn(User))
 {

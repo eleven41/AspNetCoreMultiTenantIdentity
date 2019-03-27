@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using MultiTenantSample.Mvc.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Eleven41.AspNetCore.MultiTenantIdentity;
 
 namespace MultiTenantSample.Mvc
 {
@@ -37,8 +38,11 @@ namespace MultiTenantSample.Mvc
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddDefaultIdentity<MultiTenantUser>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                
+                .AddMultiTenantIdentity<IdentityTenant>()
+                .AddMultiTenantEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
