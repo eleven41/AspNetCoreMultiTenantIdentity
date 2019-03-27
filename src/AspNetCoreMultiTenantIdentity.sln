@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eleven41.AspNetCore.MultiTenantIdentity", "MultiTenantIdentity\Eleven41.AspNetCore.MultiTenantIdentity.csproj", "{7FF71B2A-8820-4007-B696-888F470938A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eleven41.AspNetCore.MultiTenantIdentity.EntityFrameworkCore", "EntityFrameworkCore\Eleven41.AspNetCore.MultiTenantIdentity.EntityFrameworkCore.csproj", "{22AC0AD2-F085-463C-874F-22BD7D366DC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{9EE497CC-D777-4357-A1BD-0A2FAC4B4B1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FF71B2A-8820-4007-B696-888F470938A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FF71B2A-8820-4007-B696-888F470938A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF71B2A-8820-4007-B696-888F470938A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FF71B2A-8820-4007-B696-888F470938A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22AC0AD2-F085-463C-874F-22BD7D366DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22AC0AD2-F085-463C-874F-22BD7D366DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22AC0AD2-F085-463C-874F-22BD7D366DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22AC0AD2-F085-463C-874F-22BD7D366DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78B13F2D-F99F-4734-9E0B-F6332D456350}
+	EndGlobalSection
+EndGlobal
